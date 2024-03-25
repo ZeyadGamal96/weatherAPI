@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="./Images/logo.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <div class="d-flex align-items-center">
+                <div class="col-auto">
+                    <img src="./Images/logo.png" alt="weather" class="img-fluid">
+                </div>
+                <div class="col text-white ps-2">
+                    <h5 class="mb-0">Weather</h5>
+                    <p class="mb-0">tagline goes here</p>
+                </div>
+            </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active text-info ps-4 pe-4 " aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-4 pe-4 " href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-4 pe-4" href="#">Live Cameras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-4 pe-4" href="#">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-4 pe-4" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar -->
+
+<!-- Main -->
+<div class="main">
+    <div class="container pt-5">
+        <div class="input-group mb-3">
+            <input type="search" class="form-control shadow-none" id="searchInput" placeholder="Find Your Location...">
+            <button type="button" class="btn btn-primary">Find</button>
+        </div>
+        <div class="card-group pt-5 align-items-center justify-content-center" id="weatherCards">
+            <div class="card border-0">
+                <div class="head text-white">
+                    <div class="day d-flex justify-content-between align-items-center p-2">
+                        <p id="todayName" class="pt-3"></p>
+                        <p id="todayMonth"  class="pt-3"><span id="todayNumber"></span> </p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-white" id="cityName"></h5>
+                    <div class="content d-flex justify-content-between pt-3">
+                        <h1 class="text-white fw-bold" id="cityTemp"></h1>
+                        <img src="" alt="time" id="weatherConditionImg" class="w-25">
+                    </div>
+                    <p class="text-info mt-4" id="weatherCondition"></p>
+                    <div class="info d-flex justify-content-start justify-content-around text-white">
+                        <div class="rain d-flex align-items-baseline">
+                            <i class="fa-solid fa-umbrella"></i>
+                            <p id="humidity" class="px-2"></p>
+                        </div>
+                        <div class="wind d-flex align-items-baseline">
+                            <i class="fa-solid fa-wind"></i>
+                            <p id="wind"  class="px-2"></p>
+                        </div>
+                        <div class="compass d-flex align-items-baseline">
+                            <i class="fa-regular fa-compass"></i>
+                            <p id="windDirection"  class="px-2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0">
+                <div class="mid-head text-white">
+                    <div class="day text-center p-2">
+                        <p id="tomorrowDay"  class="pt-3"></p>
+                    </div>
+                </div>
+                <div class="mid-card-body text-center">
+                    <img alt="time" src="" id="tomorrowIcon"></img>
+                    <h3 class="text-white" id="maxTemp"></h3>
+                    <h6 class="text-white" id="minTemp"></h6>
+                    <p class="text-info" id="tomorrowCondition"></p>
+                </div>
+            </div>
+            <div class="card border-0">
+                <div class="third-head text-white">
+                    <div class="day text-center p-2">
+                        <p id="afterTomorrowDay"  class="pt-3"></p>
+                    </div>
+                </div>
+                <div class="third-card-body text-center">
+                    <img alt="time" src="" id="AftertomorrowIcon"></img>
+                    <h3 class="text-white" id="afterTomorrowMaxTemp"></h3>
+                    <h6 class="text-white" id="afterTomorrowMinTemp"></h6>
+                    <p class="text-info" id="afterTomorrowCondition"></p>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>
+<!-- Main -->
+
+<!-- Footer -->
+<div class="footer pt-5">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-10">
+                <div class="input-group">
+                    <input type="text" class="form-control shadow-none" placeholder="Enter Your Email to Subscribe...">
+                    <button type="button" class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="socials d-flex justify-content-md-end">
+                    <div class="social m-1" role="button"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="social m-1" role="button"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="social m-1" role="button"><i class="fa-brands fa-google-plus-g"></i></div>
+                    <div class="social m-1" role="button"><i class="fa-brands fa-pinterest"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-white text-center mt-5 mb-0">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+</div>
+
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
