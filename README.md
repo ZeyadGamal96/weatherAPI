@@ -1,3 +1,3 @@
-The WeatherAPI web application, leverages HTML, CSS, and JavaScript to provide real-time weather updates. Through integration with a weather API, it dynamically fetches and displays weather information, showcasing skills in front-end development and API integration.
+The WeatherAPI web application, developed using HTML, CSS (including Bootstrap), and JavaScript, provides real-time weather updates by fetching data from a weather API. This project showcases skills in front-end development, API integration, and responsive design.
 
 Demo: https://zeyadgamal96.github.io/weatherAPI/
